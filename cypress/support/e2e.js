@@ -19,6 +19,7 @@ import './customCommands/login/login'
 import './customCommands/homepage/homepage'
 import './customCommands/logout/logout'
 
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath');

@@ -71,5 +71,6 @@ describe('Cypress Fixture Dersi', () => {
     it('Fixture Ornek Kullanim - 7', () => {
         cy.get('element id ya da class alindi').attachFile({filePath: 'media/cat.jpg'})
     });
+    
 
 });
