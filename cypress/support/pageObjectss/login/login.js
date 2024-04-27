@@ -1,0 +1,23 @@
+class Login {
+    fillUsername(username) {
+        cy.get('input#username').should('be.empty').and('be.visible').type("username")
+        return this;
+    }
+
+    fillPassword(password) {
+        cy.get('input#password').should('be.empty').and('be.visible').type("password")
+        return this;
+    }
+
+    loginBtn (value) {
+        cy.get('input[name="login"]').should('be.visible').and('have.value', value).click()
+        return this;
+    }
+
+    errorMsg(error) {
+        cy.get('.woocommerce-error').should('be.visible').and('contain', error)
+        return this;
+    }
+    }
+
+    export default new Login()

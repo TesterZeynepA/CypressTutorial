@@ -1,0 +1,16 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openChrome": "npx cypress open --e2e --browser chrome",
+    "openFirefox": "npx cypress open --e2e --browser firefox"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.3",
+    "cypress-xpath": "^2.0.1"
+  }
+}
