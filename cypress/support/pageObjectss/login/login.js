@@ -1,11 +1,11 @@
 class Login {
     fillUsername(username) {
-        cy.get('input#username').should('be.empty').and('be.visible').type("username")
+        cy.get('input#username').should('be.empty').and('be.visible').type(username, { log: false })
         return this;
     }
 
     fillPassword(password) {
-        cy.get('input#password').should('be.empty').and('be.visible').type("password")
+        cy.get('input#password').should('be.empty').and('be.visible').type(password, { log: false })
         return this;
     }
 

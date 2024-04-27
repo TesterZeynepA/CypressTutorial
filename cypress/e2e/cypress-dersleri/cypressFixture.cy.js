@@ -17,6 +17,7 @@ describe('Cypress Fixture Dersi', () => {
             const password = user.password
             cy.login3(username, password, text.loginButonDegeri)
         })
+  
     });
 
     it('Fixture Ornek kullanim - 2', () => {
