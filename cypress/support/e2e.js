@@ -18,7 +18,8 @@ import './commands'
 import './customCommands/login/login'
 import './customCommands/homepage/homepage'
 import './customCommands/logout/logout'
-
+import './customCommands/login/automationexerciseLogin'
+import './customCommands/logout/automationexerciseLogout'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
