@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import AutomationexerciseLogin from "../../support/pageObjectss/login/automationexerciseLogin";
 /*Test Case1: Negatif Login Test
 1. https://www.automationexercise.com/login sayfasina gidin
 2. Email alanina gecersiz bir email girin
@@ -26,10 +27,14 @@ Gecerli parola: test@12345 */
 
 describe('Custom Commands ile Login testleri', () => {
     it('Test Case1: Negatif Login Test', () => {
-        
+        cy.on('uncaught:exception', (err, runnable) => { return false })
+        cy.loginNegative()
     });
 
     it('Test Case2: Pozitif Login Test', () => {
-        
+        cy.on('uncaught:exception', (err, runnable) => { return false })
+        cy.loginPositive('testclarusway@test.com', 'test@12345', 'Login', 'testclarusway')
+        cy.automationexerciseLogout() 
+        cy.automationexerciseLoginButtonVerify('Login')
     });
 });
