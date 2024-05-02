@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import AutomationexerciseLogin from "../../support/pageObjectss/login/automationexerciseLogin";
+import automationexerciseLogin from "../../support/pageObjectss/login/automationexerciseLogin";
 /*Test Case1: Negatif Login Test
 1. https://www.automationexercise.com/login sayfasina gidin
 2. Email alanina gecersiz bir email girin
