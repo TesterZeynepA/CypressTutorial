@@ -1,4 +1,4 @@
-import homepage from "../../pageObjects/homepage/homepage"
+import homepage from "../../pageObjectss/homePage/homePage/homepage"
 
 Cypress.Commands.add('homepage', () => {
 

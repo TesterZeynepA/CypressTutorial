@@ -1,6 +1,6 @@
 /// <reference types= "cypress" />
 
-import homepage from "../../support/pageObjects/homepage/homepage";
+import homepage from '../../support/pageObjectss/homePage/homePage/homepage';
 import credentials from '../../fixtures/userData.json'
 import text from '../../fixtures/text.json'
 

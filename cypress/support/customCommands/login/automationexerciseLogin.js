@@ -1,4 +1,4 @@
-import automationexerciseLogin from "../../pageObjects/login/automationexerciseLogin"
+import automationexerciseLogin from "../../pageObjectss/login/automationexerciseLogin"
 
 // Custom Commands Kullanimi - POM ile
 

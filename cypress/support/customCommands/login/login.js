@@ -1,4 +1,4 @@
-import login from "../../pageObjects/login/login"
+import login from "../../pageObjectss/login/login"
 
 // Custom Commands Kullanimi - POM ile
 

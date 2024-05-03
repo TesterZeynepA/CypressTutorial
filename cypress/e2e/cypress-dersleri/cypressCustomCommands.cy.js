@@ -1,6 +1,6 @@
 /// <reference types= "cypress" />
 
-import homepage from "../../support/pageObjects/homepage/homepage";
+import homepage from "../../support/pageObjectss/homePage/homePage/homepage";
 
 describe('Cypress Custom Commands Kullanimi-1', () => {
     it('Ornek Kullanim', () => {
