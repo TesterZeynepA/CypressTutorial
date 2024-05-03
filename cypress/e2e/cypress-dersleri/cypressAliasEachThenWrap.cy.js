@@ -1,10 +1,24 @@
 /// <reference types= "cypress" />
-import homepage from "../../support/pageObjects/homepage/homepage";
+
+import homepage from "../../support/pageObjectss/homePage/homePage/homepage"
+import login from "../../support/pageObjectss/login/login"
+
 
 describe('Alias - Then - Wrap - Each Kullanim Ornekleri', () => {
-    it('Alias Ornek Kullanim', () => {
+    before(() => {
+        cy.log('Alias Then Each Wrap Kullanim Ornekleri Testi Basliyor!!!')
+    });
+
+    beforeEach(() => {
         cy.on('uncaught:exception', (err, runnable) => { return false })
         homepage.navigate()
+    });
+
+    after(() => {
+        cy.log('Alias Then Each Wrap Kullanim Ornekleri Testi Tamamlandi!!!')
+    });
+
+    it('Alias Ornek Kullanim', () => {
         cy.get('#customer_login').as('h2LoginDogrula')
         cy.get('@h2LoginDogrula').should('contain', 'Login')
         cy.get('@h2LoginDogrula').should('contain', 'Username')
@@ -15,7 +29,7 @@ describe('Alias - Then - Wrap - Each Kullanim Ornekleri', () => {
         .then(() => {
             cy.get('@h2LoginDogrula').should('contain', 'Login')
             cy.get('@h2LoginDogrula').should('contain', 'Username')
-
+            
             login.fillUsername('deneme123@test.com')
             login.fillPassword('Deneme@12345')
             login.loginBtn('Login')
@@ -29,8 +43,12 @@ describe('Alias - Then - Wrap - Each Kullanim Ornekleri', () => {
         cy.get('input[type="email"]').each((el) => {
             cy.log(el)
             cy.wrap(el).type('Test')
+        }).then(() => {
+            cy.get('secici yazilir').should('contain', 'iceren kelime eklenir')
         })
 
-        cy.get('input[type="submit"]').each((el) => {
+        cy.get('input[type="submit"]').as('button').each((el2) => {
+            cy.log(el2)
+        })
     });
 });
