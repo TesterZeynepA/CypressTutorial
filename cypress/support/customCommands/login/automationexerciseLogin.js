@@ -5,11 +5,11 @@ import automationexerciseLogin from "../../pageObjectss/login/automationexercise
 Cypress.Commands.add('loginNegative', () => {
     automationexerciseLogin.fillEmail('test@gmail.com')
     automationexerciseLogin.fillPassword('123456')
-    automationexerciseLogin.loginBtn('Login')
+    automationexerciseLogin.loginBtn('')
     automationexerciseLogin.errorMsg('Your email or password is incorrect!')
 })
 
-Cypress.Commands.add('loginPozitive', (email, password,value,username,value2) => {
+Cypress.Commands.add('loginPositive', (email, password,value,username) => {
     automationexerciseLogin.fillEmail(email)
     automationexerciseLogin.fillPassword(password)
     automationexerciseLogin.loginBtn(value)

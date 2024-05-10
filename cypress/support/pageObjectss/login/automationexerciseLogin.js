@@ -1,7 +1,4 @@
 class AutomationexerciseLogin{
-    navigate() {
-    cy.visit('https://www.automationexercise.com/login')
-}
 
 fillEmail(email) {
     cy.get('input[data-qa="login-email"]').should('be.empty').and('be.visible').type(email, { log: false })
@@ -14,21 +11,22 @@ fillPassword(password) {
 }
 
 loginBtn (value) {
-    cy.get('input[data-qa="login-button"]').should('be.visible').and('have.value', value).click()
+    cy.get('button[data-qa="login-button"]').should('be.visible').and('have.value', value).click()
     return this;
 }
 
 errorMsg(error) {
-    cy.get('//p[text()="Your email or password is incorrect!"]').should('be.visible').and('have.text', error)
+    cy.xpath('//p[text()="Your email or password is incorrect!"]').should('be.visible').and('have.text', error)
     return this;
 }
 
 verifyUserName(username){
-    cy.get('i[class="fa fa-user"]').should('be.visible').and('have.text', username)
+    cy.xpath('//b[text()="test"]').should('be.visible').and('include.text', username)
 }
 
 verifyLoginBtn(value2){
-    cy.get('input[data-qa="login-button"]').should('be.visible').and('have.value', value2)
+    cy.xpath('//a[text()=" Signup / Login"]').should('be.visible').and('include.text', value2)
 }
 }
+
 export default new AutomationexerciseLogin()
