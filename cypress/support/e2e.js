@@ -21,6 +21,9 @@ import './customCommands/logout/logout'
 import './customCommands/login/automationexerciseLogin'
 import './customCommands/logout/automationexerciseLogout'
 import './customCommands/homepage/betterroamingHomePage'
+import registerCypressGrep from '@cypress/grep/src/support'
+registerCypressGrep()
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
