@@ -29,6 +29,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.9.0",
+    "cypress-delete-downloads-folder": "^0.0.5",
+    "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^2.0.1"
   }
 }
