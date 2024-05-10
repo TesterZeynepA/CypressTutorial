@@ -20,6 +20,7 @@ import './customCommands/homepage/homepage'
 import './customCommands/logout/logout'
 import './customCommands/login/automationexerciseLogin'
 import './customCommands/logout/automationexerciseLogout'
+import './customCommands/homepage/betterroamingHomePage'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
