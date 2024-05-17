@@ -23,7 +23,8 @@ import './customCommands/logout/automationexerciseLogout'
 import './customCommands/homepage/betterroamingHomePage'
 import registerCypressGrep from '@cypress/grep/src/support'
 registerCypressGrep()
-
+import './customCommands/homepage/mercedes'
+import "cypress-real-events"
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

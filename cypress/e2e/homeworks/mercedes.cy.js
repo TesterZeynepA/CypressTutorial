@@ -1,3 +1,8 @@
+/// <reference types="cypress" />
+
+import mercedesHomePage from "../../support/pageObjectss/homePage/mercedesHomePage";
+import mercedesSearch from "../../fixtures/mercedesSearch.json"
+
 /* https://www.mercedes-benz.co.uk/ sitesine 
 gidilecek
 ▶ Cookies için çıkan pop-up kısmında Agree to all 
@@ -20,3 +25,21 @@ kullanılacaksa onu tercih ediniz.
 ▶ Assertionları eklemeyi unutmayın! 
 ▶ Title, url ve başka eklemek istediğiniz doğrulamalar varsa 
 optional olarak ekleyebilirsiniz. */
+
+describe('Mercedes Task', () => {
+    before(() => {
+        cy.on('uncaught:exception', (err, runnable) => { return false })
+        mercedesHomePage.navigate()
+        mercedesHomePage.verifyUrl('https://www.mercedes-benz.co.uk/')
+       // mercedesHomePage.verifyTitle('Mercedes-Benz Passenger Cars')
+        cy.wait(3000)
+        cy.agreeAllCookies()
+    });
+    it('Search for Mercedes', () => {
+        mercedesHomePage.searchToMercedes(mercedesSearch.searchWord)
+        cy.wait(3000)
+       // mercedesHomePage.verifyTitle('Search')
+        mercedesHomePage.verifyMercedesSearchResult()
+    });
+   
+});
