@@ -3,7 +3,7 @@ describe('Cypress File Islemleri Dersi', () => {
         cy.visit('https://practice.expandtesting.com/upload')
         cy.on('uncaught:exception', (err, runnable) => { return false })
         cy.get('#fileInput').should('be.visible').attachFile({filePath:'../fixtures/media/cat.jpg'})
-        cy.get('#fileSubmit').should('be.visible').and('contain', 'Upload').click()
+        cy.get('button#fileSubmit').should('be.visible').and('contain', 'Upload').click()
     });
     it('File Upload Islemi - Nefatif Case', () => {
         cy.visit('https://practice.expandtesting.com/upload')
