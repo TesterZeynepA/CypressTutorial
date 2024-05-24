@@ -27,6 +27,7 @@ import './customCommands/homepage/mercedes'
 import "cypress-real-events"
 import 'cypress-mochawesome-reporter/register';
 import "allure-cypress/commands";
+import '@cypress-audit/lighthouse/commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
