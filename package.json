@@ -14,7 +14,7 @@
     "cy:open:electron": "cypress open --e2e --browser electron",
     "cy:run:headed": "cypress run --headed",
     "cy:run:headless": "cypress run --headless",
-    "cy:run:record": "cypress run --record ",
+    "cy:run:record": "cypress run --record --key 21e84c18-c9d7-412a-b8e8-1d93912f417f ",
     "cy:run:dev": "cypress run --env='dev'",
     "cy:run:staging": "cypress run --env='staging' ",
     "cy:run:preprod": "cypress run --env='preprod' ",

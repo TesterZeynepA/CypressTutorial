@@ -4,6 +4,7 @@ const { allureCypress } = require("allure-cypress/reporter");
 const { lighthouse, prepareAudit } = require('@cypress-audit/lighthouse')
 
 module.exports = defineConfig({
+  projectId: "kwepke",
   viewportHeight: 1000,
   viewportWidth: 1500,
   reporter: 'cypress-mochawesome-reporter', 
