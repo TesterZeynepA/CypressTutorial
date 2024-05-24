@@ -25,6 +25,8 @@ import registerCypressGrep from '@cypress/grep/src/support'
 registerCypressGrep()
 import './customCommands/homepage/mercedes'
 import "cypress-real-events"
+import 'cypress-mochawesome-reporter/register';
+import "allure-cypress/commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
