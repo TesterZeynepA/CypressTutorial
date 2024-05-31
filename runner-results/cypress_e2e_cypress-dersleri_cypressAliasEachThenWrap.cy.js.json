@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 3,
+  "passes": 2,
+  "pending": 0,
+  "failures": 1,
+  "start": "2024-05-31T17:48:50.247Z",
+  "duration": 77385,
+  "file": "cypress\\e2e\\cypress-dersleri\\cypressAliasEachThenWrap.cy.js"
+}

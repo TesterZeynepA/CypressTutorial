@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 8,
+  "passes": 0,
+  "pending": 0,
+  "failures": 8,
+  "start": "2024-05-31T17:51:14.045Z",
+  "duration": 52100,
+  "file": "cypress\\e2e\\cypress-dersleri\\cypressFixture.cy.js"
+}

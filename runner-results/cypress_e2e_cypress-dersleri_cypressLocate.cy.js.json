@@ -1,0 +1,10 @@
+{
+  "suites": 2,
+  "tests": 3,
+  "passes": 2,
+  "pending": 2,
+  "failures": 0,
+  "start": "2024-05-31T17:52:14.256Z",
+  "duration": 58404,
+  "file": "cypress\\e2e\\cypress-dersleri\\cypressLocate.cy.js"
+}
